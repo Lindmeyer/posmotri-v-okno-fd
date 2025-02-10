@@ -42,8 +42,8 @@ ol {
 
 .content {
   display: grid;
-  grid-template-columns: 711px 399px;
-  grid-template-rows: 534px;
+  grid-template-columns: 710px 400px;
+  grid-template-rows: 535px;
   gap: 30px;
   justify-content: center;
   align-content: center;
@@ -56,8 +56,8 @@ ol {
 
 .result__video-container {
   position: relative;
-  width: 711px;
-  height: 386px;
+  width: 710px;
+  height: 380px;
   margin-bottom: 16px;
 }
 
@@ -208,7 +208,7 @@ ol {
 }
 
 .search-form__submit-button {
-  width: 194px;
+  width: 195px;
 }
 
 .content__details {
@@ -232,9 +232,8 @@ ol {
 }
 
 .content__list {
-  /* ЗДЕСЬ ОКАЖУТСЯ ТЕМПЛЕЙТЫ КАРТОЧЕК */
   position: relative;
-  height: 298px;
+  height: 295px;
   overflow: auto;
   scrollbar-width: none;
 }
@@ -300,8 +299,8 @@ ol {
 }
 
 .content__video-card-thumbnail {
-  width: 194px;
-  height: 103px;
+  width: 195px;
+  height: 105px;
   object-fit: cover;
   object-position: center;
 }
