@@ -9,17 +9,17 @@ html {
 }
 
 .page {
-  inline-size: 1140px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  inline-size: 1200px;
   block-size: 100%;
   margin: auto;
   color: #fff;
   font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
   background-color: #1b1919;
-  display: flex;
-  justify-content: center;
   align-content: center;
-  gap: 30px;
 }
 
 h1,
@@ -43,15 +43,19 @@ ol {
 
 .content {
   display: grid;
-  grid-template-columns: 711px 1fr;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: end;
   grid-template-rows: 534px;
   height: max-content;
-  gap: 26px;
+  gap: 30px;
   margin: auto 0;
 }
 
 .result {
   align-self: end;
+  display: grid;
+  min-width: 711px;
   display: inline;
 }
 
@@ -59,7 +63,9 @@ ol {
   position: relative;
   width: 100%;
   height: 386px;
+  margin-top: 78px;
   margin-bottom: 16px;
+  object-fit: cover;
 }
 
 .result__video {
@@ -70,17 +76,17 @@ ol {
 }
 
 .search-form {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
   align-items: end;
 }
 
 .search-form__fieldset {
   border: none;
-}
-
-.search-form__fieldset {
-  border: none;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 }
 
 .search-form__fieldset-title {
@@ -110,6 +116,7 @@ ol {
 
 .visually-hidden {
   position: absolute;
+  overflow: hidden;
   inline-size: 1px;
   block-size: 1px;
   overflow: hidden;
@@ -243,9 +250,9 @@ ol {
 }
 
 .content__list-container {
-  height: 326px;
   position: relative;
-  overflow: auto;
+  height: 298px;
+  overflow-y: scroll;
 }
 
 .content__list-item:active {
